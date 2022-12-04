@@ -15,7 +15,7 @@ spec:
         app: backend-feed
     spec:
       containers:
-      - image: vuongnd9/udacity-api-feed
+      - image: vuongnd9/udagram-api-feed:v1
         name: backend-feed
         imagePullPolicy: Always  
         resources:
