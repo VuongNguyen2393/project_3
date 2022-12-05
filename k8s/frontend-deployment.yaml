@@ -16,14 +16,16 @@ spec:
         api: external        
     spec:
       containers:
-      - image:  vuongnd9/udagram-frontend:v2
+      - image:  vuongnd9/udagram-frontend:v1
         name: frontend
         imagePullPolicy: Always          
         ports:
         - containerPort: 80
         resources:
           requests:
+            memory: "64Mi"
             cpu: "250m"
           limits:
+            memory: "4096Mi"
             cpu: "500m"                
       restartPolicy: Always
